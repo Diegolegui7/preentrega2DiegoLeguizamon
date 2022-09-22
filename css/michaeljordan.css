@@ -1,0 +1,249 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color:black;
+background-color: #F5E8C7;
+margin: 0 px;
+padding: 0 px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    font-size: 50px; 
+    align-items: center;   
+    padding: 10px;
+    height: 170px;
+    
+}
+
+.nav-foto{
+    float: left;
+    height: 150px;
+    width: 150px;
+ }
+
+.section ul li {
+    background-color: #FFCCB3;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px;  
+ }
+ .section ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-shadow: 10px 11px 18 px 18 px rgb(202, 0, 0), -10px -11px -18px -18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .section ul li a:hover{
+    color: blue;
+ }
+ .section ul{
+    margin-bottom: 10px;
+ }
+
+ .section li {
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 10px;
+    margin-bottom: 5px;
+    height: 100%;
+    width: auto;
+    margin-top: 5px;
+}
+
+
+
+
+
+section,h1{
+    margin: 10px;
+    list-style:none;
+    font-size: smaller;  
+}
+.container-fluid{
+    font-family: ui-sans-serif;
+    gap: 100px;
+    font-size: 20px;
+    margin: 5px;
+}
+.h1{
+    font-size: 50px;
+}
+header{
+    justify-content: space-around;
+    background-color: lightcoral;
+    
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    color: black;
+    text-decoration: none;
+}
+.nav-ul li{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.nav-ul li:hover{
+    color: blue;
+}
+
+
+main{
+    margin: 40px auto;
+    width: 90%;
+}
+#infancia,h3{
+    padding-bottom: 40px;
+    
+}
+.infancia-h3{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.main-infancia{
+    display: grid;
+    grid-template-areas: 
+    "h3 img"
+    
+    
+}
+.main-infancia h3{    
+    grid-area: h3;
+}
+
+.main-infancia img{
+    grid-area: img;
+    border-radius: 50%;
+}
+#familia{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.main-familia {
+    display: grid;
+    grid-template-areas: 
+    "img h3";
+    
+}
+.main-familia h3{
+    grid-area: h3;
+    margin: 45px;
+}
+.main-familia img{
+    grid-area: img;
+    border-radius: 15%;
+    margin: 1 rem;
+    margin-bottom: 100px;
+}
+.main-familia img:hover{
+    transition: 1s;
+    width: 300px;
+    height: 300px;
+}
+
+.video{
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  transform: translate(-80%,-80%);
+  height: 300px;
+  width: 300px;
+}
+.video:hover{
+    transition: 500ms;
+    height: 400px;
+    width: 500px;
+}
+
+#carrera{
+    color: white;
+    max-width: 1200px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("../img/michaeljordanbulls.webp");
+    background-position: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    margin: 2rem;
+    margin-top: 20px;
+}
+
+#carrera:hover{
+    transition: 1000ms;
+    box-shadow: 0px 0px 20px grey; ;
+}
+.footer{
+    background-color: lightcoral;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-ul{
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    justify-content: center;
+    color: black;
+    margin-bottom: 30px;
+}
+.footer-ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-shadow: 10px 11px 18 px 18 px rgb(202, 0, 0), -10px -11px -18px -18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-ul li a:hover{
+    color: blue;
+}
+
+.numeros{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+}
+.numeros:hover{
+    transition: 500ms;
+    background-color: lightcoral;
+}
+@media only screen and (max-width:575px){
+    .h1{
+        display: none;
+    }
+    .section ul{
+        margin: 0px;
+    }
+    .main-infancia{
+        display: grid;
+        grid-template-areas: 
+        "h3"
+        "img"
+     }
+    .main-familia{
+            display: grid;
+            grid-template-areas: 
+            "h3"
+            "img"
+        }
+    .video{
+        display: none;
+    }
+
+}
