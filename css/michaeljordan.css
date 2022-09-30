@@ -6,7 +6,7 @@
 
 body{
     color:black;
-background-color: #F5E8C7;
+background-color: #ededed;
 margin: 0 px;
 padding: 0 px;
 font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +29,7 @@ header{
  }
 
 .section ul li {
-    background-color: #FFCCB3;
+    background-color: #dfcac0;
     border-radius: 50px;
     box-shadow: 2px 2px 5px;  
  }
@@ -57,11 +57,6 @@ header{
     width: auto;
     margin-top: 5px;
 }
-
-
-
-
-
 section,h1{
     margin: 10px;
     list-style:none;
@@ -78,7 +73,7 @@ section,h1{
 }
 header{
     justify-content: space-around;
-    background-color: lightcoral;
+    background-color: #dc191b;
     
 }
 .nav-ul{
@@ -105,7 +100,8 @@ main{
 }
 #infancia,h3{
     padding-bottom: 40px;
-    
+    display: flex;
+    justify-content: center;
 }
 .infancia-h3{
     display: flex;
@@ -115,21 +111,23 @@ main{
 .main-infancia{
     display: grid;
     grid-template-areas: 
-    "h3 img"
-    
-    
+    "h3 img"   
 }
 .main-infancia h3{    
     grid-area: h3;
 }
-
 .main-infancia img{
     grid-area: img;
     border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
 }
 #familia{
     margin-top: 20px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 .main-familia {
     display: grid;
@@ -139,7 +137,8 @@ main{
 }
 .main-familia h3{
     grid-area: h3;
-    margin: 45px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 .main-familia img{
     grid-area: img;
@@ -147,10 +146,9 @@ main{
     margin: 1 rem;
     margin-bottom: 100px;
 }
-.main-familia img:hover{
-    transition: 1s;
-    width: 300px;
-    height: 300px;
+.main-familia img{
+    width: 100%;
+    height: 400px;
 }
 
 .video{
@@ -167,7 +165,7 @@ main{
     width: 500px;
 }
 
-#carrera{
+#carrera1{
     color: white;
     max-width: 1200px;
     background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("../img/michaeljordanbulls.webp");
@@ -177,12 +175,57 @@ main{
     box-shadow: 0px 0px 20px black;
     margin: 2rem;
     margin-top: 20px;
+    text-shadow: 1px 2px #001;
+}
+#carrera2{
+    color: white;
+    max-width: 1200px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("../img/magicjohnsonfoto.jpg");
+    background-position: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    margin: 2rem;
+    margin-top: 20px;
+    text-shadow: 1px 2px #000;
+}
+#carrera3{
+    color: white;
+    max-width: 1200px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("../img/lebronjames2.jpg");
+    background-position: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    margin: 2rem;
+    margin-top: 20px;
+    text-shadow: 1px 2px #001;
+}
+#carrera4{
+    color: white;
+    max-width: 1200px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("../img/jabbar.jpg");
+    background-position: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    margin: 2rem;
+    margin-top: 20px;
+    text-shadow: 1px 2px #001;
+}
+#carrera5{
+    color: white;
+    max-width: 1200px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("../img/kobe\ bryant.png");
+    background-position: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px black;
+    margin: 2rem;
+    margin-top: 20px;
+    text-shadow: 1px 2px #001;
 }
 
-#carrera:hover{
-    transition: 1000ms;
-    box-shadow: 0px 0px 20px grey; ;
-}
 .footer{
     background-color: lightcoral;
     height: 60px;

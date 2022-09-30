@@ -2,7 +2,7 @@
 padding: 0px;}
 
 body{color:black;
-background-color: #F5E8C7;
+background-color:#ededed ;
 margin: 0 px;
 padding: 0 px;
 font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +11,7 @@ font-size: 20px;
 }
 
 
-.hbd-header {background-color:lightcoral;
+.hbd-header {background-color: #dc191b;
     display: flex; 
     justify-content: space-between;
     font-size:smaller; 
@@ -122,6 +122,7 @@ color: blue;
 #inicio{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .div-inicio{
     margin-bottom: 150px;
@@ -143,7 +144,7 @@ color: blue;
 .div-inicio p{
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding-left: 30px;
     font-size: 25px;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
@@ -252,10 +253,8 @@ color: blue;
     color: red;
 }
 .footer{
-    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .footer-ul{
@@ -264,7 +263,7 @@ color: blue;
     gap: 20px;
     justify-content: center;
     color: black;
-    margin-bottom: 30px;
+    padding-top: 40px;
 }
 .footer-ul li a{
     list-style: none;
@@ -291,7 +290,23 @@ color: blue;
 .footer-2{
     display: flex;
     text-align: center;
-    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 40px;
+    animation-name: aplicaciones;
+    animation-iteration-count:infinite ;
+    animation-duration: 2s;
+}
+@keyframes aplicaciones{
+    0%, 50%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px) ;
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 @media only screen and (max-width:575px){
@@ -299,13 +314,12 @@ color: blue;
         padding: 0px;}
 
     body{color:black;
-            background-color: #F5E8C7;
             margin: 0 px;
             padding: 0 px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            
+            font-size: 20px;        
     }
+
     .hbd-header ul{
         height: 30%;
         margin-top: -100px;
