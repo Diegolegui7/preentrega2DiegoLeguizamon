@@ -314,7 +314,7 @@ color: blue;
         padding: 0px;}
 
     body{color:black;
-            margin: 0 px;
+            margin: 10 px;
             padding: 0 px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;        
@@ -337,12 +337,12 @@ color: blue;
         margin-left:0px;
     }
     .img-body{
-        height: 480px;
-        width: 480px;
+        height: auto;
+        width: 100%;
     }
     .img-body:hover{
-    height: 480px;
-    width: 480px;
+        height: auto;
+        width: 100%;
     }
     .img-body2{
         height: 0%;
